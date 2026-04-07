@@ -33,9 +33,12 @@ $kategori = trim($_GET['kategori']??'semua');
 <?php if (isset($_GET['keyword']) || isset ($_GET['kategori'])): ?>
     <div class="result">
         <strong>hasil GET:</strong><br>
-        keyword: <?= htmlspecialchars($keyword, ENT_QUOTES, 'UTF-8')?><br>
-        kategori: <?= htmlspecialchars($kategori, ENT_QUOTES, 'UTF-8')?><br>
+        Keyword: <?= htmlspecialchars($keyword, ENT_QUOTES, 'UTF-8')?><br>
+        kategori: <?= htmlspecialchars($kategori, ENT_QUOTES, 'UTF-8')?>
+        <hr/>
+        Keyword: <?php echo $keyword; ?><br>
     </div>
     <?php endif; ?>
+    <h2>2) <a href="index2,php">Contoh form POST</a></h2>
 </body>
 </html>
