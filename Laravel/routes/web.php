@@ -72,3 +72,8 @@ Route::delete('/hapus/{id}', function($id){
 Route::get('/test-method', function(){
     return view('test_method');
 });
+
+//mengirim data ke view
+Route::get('/detailproduk/(name)', function($name))[
+    
+]
