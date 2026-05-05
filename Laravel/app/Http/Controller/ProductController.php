@@ -13,6 +13,7 @@ class ProductController extends Controller
     {
         return view('produk.index');
     }
+    
 
     /**
      * Show the form for creating a new resource.
