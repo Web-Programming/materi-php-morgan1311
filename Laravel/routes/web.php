@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 //Route ke halaman utama (home)
 Route::get('/', function () {
-    echo "Hallo, My name is Morgan";
+    echo "Hallo, Nama Saya Pak JR";
     //return view('welcome');
 });
 //Route ke halaman alamat
@@ -74,7 +74,7 @@ Route::get('/test-method', function(){
 
 //Manampilkan halaman profil
 Route::get('/profil', function(){
-    return view('profile');
+    return view("profile");
 });
 
 //Gunakan . untuk memisahkan folder dgn view
@@ -117,4 +117,5 @@ Route::get('/produk/search', ProductController::class.'@search');
 // });
 
 //php artisan make:controller SupplierController --resource
+use App\Http\Controllers\SupplierController;
 Route::resource('/supplier', SupplierController::class);
