@@ -1,19 +1,22 @@
-## Tahapan Instalasi Project
+## Catatan
+1. Membuat Model Migration dan Controller
+``php artisan make:model Barang -mc``
 
-1. Clone project dari repository
-2. Akses project dari terminal (command prompt)
-3. Jalankan perintah `composer install` untuk mendownload dependensi
-4. Copy file `.env.example` dan rename menjadi `.env`
-5. Jalankan perintah `php artisan key:generate`
+2. Menjalankan Migration
+``php artisan migrate``
 
-## Menyiapkan database
+3. Membuat View
+``php artisan make:view namafolde.namaview``
+output : namafolder/namaview.blade.php
 
-1. Buat file `database.sqlite` di dalam folder `database/`
-2. Jalankan perintah `php artisan migrate`
+4. Membuat Controller Saja
+``php artisan make:controller NamaController``
 
-## Menjalankan server
+5. Menjalankan Dev. Server
+``php artisan serve``
 
-1. Pastikan seluruh dependensi telah terinstall
-2. Pastikan key sudah digenerate
-3. Pastikan database sudah disiapkan
-4. Jalankan perintah `php artisan serve`
+6. Membuat Seeder
+``php artisan make:seeder BarangSeeder``
+
+7. Menjalanka Seeder
+``php artisan db:seed --class="BarangSeeder"``
