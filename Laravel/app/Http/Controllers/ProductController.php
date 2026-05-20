@@ -62,6 +62,7 @@ class ProductController extends Controller
      */
     public function edit(string $id)
     {
+        Gate::authorize('update-products');
         return view('produk.edit', ['id' => $id]);
     }
 
